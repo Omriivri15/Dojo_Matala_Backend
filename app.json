@@ -1,0 +1,43 @@
+{
+  "name": "DOJO IS GREAT - Backend",
+  "description": "Backend API for authentication system",
+  "repository": "https://github.com/YOUR_USERNAME/dojo-backend",
+  "keywords": ["node", "express", "mongodb", "jwt", "authentication"],
+  "success_url": "/api/auth/me",
+  "env": {
+    "MONGODB_URI": {
+      "description": "MongoDB connection string",
+      "required": true
+    },
+    "JWT_SECRET": {
+      "description": "Secret key for JWT tokens",
+      "required": true
+    },
+    "JWT_REFRESH_SECRET": {
+      "description": "Secret key for refresh tokens",
+      "required": true
+    },
+    "SMTP_HOST": {
+      "description": "SMTP server host (e.g., smtp.gmail.com)",
+      "required": false
+    },
+    "SMTP_PORT": {
+      "description": "SMTP server port",
+      "value": "587",
+      "required": false
+    },
+    "SMTP_USER": {
+      "description": "SMTP username/email",
+      "required": false
+    },
+    "SMTP_PASS": {
+      "description": "SMTP password/app password",
+      "required": false
+    },
+    "EMAIL_FROM": {
+      "description": "Email address to send from",
+      "required": false
+    }
+  }
+}
+
